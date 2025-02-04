@@ -1,0 +1,19 @@
+# Train and predict
+best_valid_loss = float('inf')
+train_losses = []
+valid_losses = []
+
+for epoch in range(epochs):
+    print(f'\n Epoch {epoch + 1} / {epochs}')
+    train_loss = train()
+    valid_loss = evaluate()
+
+    if valid_loss < best_valid_loss:
+        best_valid_loss = valid_loss
+        torch.save(model.state_dict(), 'c2_new_model_weights.pt')
+
+    train_losses.append(train_loss)
+    valid_losses.append(valid_loss)
+
+    print(f'\nTraining Loss: {train_loss:.3f}')
+    print(f'Validation Loss: {valid_loss:.3f}')
