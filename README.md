@@ -7,7 +7,7 @@ This project implements a text classification model to analyze judicial texts in
 1.  **Affirmed** (`በማለት አረጋግጠዋል`)
 2.  **Reversed/Questioned** (`ተቀልብሷል/ተጠየቀ`)
 
-The model utilizes a **Fine-Tuned XLM-RoBERTa** architecture, a powerful multilingual transformer model, for this binary classification task.
+The model utilizes a **Fine-Tuned XLM-RoBERTa, BERT, RoBERTA** architecture, a powerful multilingual transformer model, for this binary classification task.
 
 ---
 
